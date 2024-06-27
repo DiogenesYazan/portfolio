@@ -1,0 +1,222 @@
+@import '../main.scss';
+
+.all-about {
+  background-color: $background-color;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about {
+  
+  display: flex;
+  font-family:  'Raleway', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+
+  @include respond(tab-land) {
+    margin-left: 7%;
+  }
+
+  @include respond(tab-port-small) {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    justify-content: center;
+  }
+
+  &-text-skills {
+    align-items: center;
+    display: flex;
+    flex-direction: column;    
+    width: 45%;
+
+    @include respond(tab-port-small) {
+      margin-left: 10%;
+      width: 80%;
+    }
+  }
+
+  &-text {
+    color: $color-white;
+    line-height: 2.6rem;
+    padding: 0 0 $padding-top-bottom 0;
+    // text-align: justify;
+
+    @include respond(tab-port-small) {
+      padding: 4% 0 $padding-top-bottom 0;
+    }
+
+    @include respond(phone) {
+      margin-top: 3%;
+      text-align: justify;
+    }
+
+    &-p-1 {
+      font-size: 4.3rem;
+      font-weight: 700;
+      line-height: 5.5rem;
+      margin: 0;
+
+      @include respond(phone) {
+        font-size: 3.2rem;
+      }
+    }
+
+    &-p-2, &-p-6 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      line-height: 5rem;
+
+      & span {
+        font-weight: 700;
+      }
+
+      @include respond(tab-port-small) {
+        font-size: 1.9rem;
+      }
+    }
+
+    &-p-3, &-p-4, &-p-5 {
+      font-size: 1.7rem;
+      font-weight: 400;
+
+      @include respond(tab-port-small) {
+        font-size: 1.8rem;
+        line-height: 3rem;
+      }
+
+      @include respond(phone) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &-p-6 {
+      margin-bottom: 0;
+    }
+
+    &-p span {
+      color: $color-purple;
+    }
+  }
+
+  &-skills {
+    color: $color-white;
+    border-top: 2px solid $color-purple;
+    padding-top: 7%;
+    width: 100%;
+
+    @include respond(phone) {
+      padding-top: 15%;
+    }
+
+    &-p {
+      font-size: 1.7rem;
+      font-weight: 700;
+      padding-bottom: 5%;
+    }
+  }
+
+  &-skill {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    color: $color-white;
+    
+
+    @include respond(phone) {
+      margin-bottom: 20%;
+    }
+  }
+
+  &-div-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 7%;
+    padding-bottom: 4%;
+    transition: all .3s;
+
+    &:hover {
+      color: $color-purple;
+      transform: translateY(-3px);
+    }
+
+    @include respond(tab-port) {
+      padding-right: 8%;
+      margin-bottom: 8%;
+    }
+  }
+
+  &-icon {
+    font-size: 3.2rem;
+    transition: all .3s;
+
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+    }
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+
+    
+
+    &-text {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-top: 10%;
+      transition: all .3s;
+
+      @include respond(tab-port) {
+        font-size: 1.5rem;
+      }
+
+      @include respond(phone) {
+        margin-top: 15%;
+      }
+    }
+  }
+
+  &-image {
+    width: 60%;
+
+    @include respond(tab-land) {
+      width: 70%;
+    }
+
+    @include respond(tab-port-small) {
+      padding-bottom: 10%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      margin-bottom: 10%;
+    }
+  }
+
+  &-img {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    object-fit: cover; object-position: 50% 30%;
+
+    @include respond(tab-land) {
+      width: 45%;
+    }
+   
+    @include respond(tab-port-small) {
+      width: 100%;
+      position: relative;
+    }
+  }
+}
+

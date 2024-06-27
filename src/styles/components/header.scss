@@ -1,0 +1,85 @@
+@import '../main.scss';
+
+
+.header {
+  background-color: transparent;
+  color: $color-gray-light;
+  
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  
+  padding: 4% 0 4% 10%;
+  width: 100%;
+
+  @include respond(tab-land) {
+    padding: 5% 0 5% 7%;
+  }
+
+  @include respond(tab-port-small) {
+    padding: 7% 0 7% 10%;
+  }
+
+  @include respond(phone) {
+    padding: 10% 0;
+  }
+
+  &-nav {
+    display: flex;
+    text-transform: uppercase;
+
+    @include respond(tab-land) {
+      margin-right: 15%;
+    }
+
+    @include respond(tab-port) {
+      margin-right: 25%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      margin: 0;
+      justify-content: space-around;
+    }
+
+    & a {
+      font-weight: 400;
+      margin-right: 42%;
+      text-decoration: none;
+      color: $color-gray-light;
+      transition: all .3s;
+
+      @include respond(tab-land) {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+
+      @include respond(tab-port-small) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(phone) {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      @include respond(phone-small) {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-top: 2%;
+      }
+
+      &:hover {
+        color: $color-purple;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+}
+
+.selected {
+  font-weight: 600 !important;
+  color: $color-purple !important;
+}

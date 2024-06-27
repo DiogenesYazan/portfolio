@@ -1,0 +1,363 @@
+@import '../main.scss';
+
+.dark-background {
+  background-color: $background-color;
+  background-size: cover;
+}
+
+.header-social-media {
+  display: flex;
+  justify-content: center;
+
+
+  &-section {
+    display: flex;
+    animation: opacityEffect 3s cubic-bezier(0.45, 0.05, 0.55, 0.95) both, slideUpEffect 3s ease both;
+    align-items: center;
+    background-color: $color-purple;
+    border-radius: 0 0 1.5rem 1.5rem ;
+    height: fit-content;
+    margin-right: 6.5%;
+    padding: .5% 1%;
+    transition: all .2s;
+
+    @include respond(tab-land) {
+      margin-right: 8.4%;
+    }
+
+    @include respond(tab-port) {
+      border-radius: 1.5rem 1.5rem 0 0 ;
+      width: 70%;
+
+      justify-content: space-evenly;
+      margin-right: 0;
+      position: fixed;
+      bottom: 0;
+    }
+
+    @include respond(tab-port-small) {
+      padding: .2% 0; 
+    }
+
+    & a {
+      font-size: 2.1rem;
+      text-decoration: none;
+      padding: 1rem 2.5rem;
+      
+      color: $color-gray-dark;
+      transition: all .3s;
+  
+      @include respond(tab-port) {
+        font-size: 1.8rem;
+      }
+  
+      @include respond(phone) {
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+      }
+  
+      @include respond(phone) {
+        font-size: 1.5rem;
+        padding: .8rem 1.7rem;
+      }
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.particles {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+
+  .particle {
+    position: absolute;
+    bottom: 0;
+    /* outras propriedades */
+  }
+}
+
+.project {
+
+  &-thumbnail-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  &-individual-thumbnail {
+    align-items: center;
+    background-color: $color-gray-dark;
+    box-shadow: 0 4px 8px 0 rgba($color-black, 0.9), 0 6px 20px 0 rgba($color-black, 0.9);
+    border-radius: 5px;
+    color: $color-purple;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5%;
+    padding-bottom: 2%;
+    overflow: hidden;
+    width: 27%;
+    //z-index: 2;
+
+    @include respond(tab-land) {
+      width: 40%
+    }
+
+    @include respond(tab-port) {
+      width: 70%
+    }
+
+    @include respond(phone) {
+      margin-top: 10%;
+      width: 90%
+    }
+
+    & p {
+      font-size: 2rem;
+      margin-top: 5%;
+    }
+
+    & a {
+      text-decoration: none;
+      color: $color-white;
+    }
+
+  }
+
+  &-video-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    width: 100%;
+
+    @include respond(tab-port) {
+      width: 100%
+    }
+
+    .project-btns {
+      padding: 2%;
+      border-radius: 50%;
+      background-color: darken($color-gray-dark, 4%);
+      text-decoration: none;
+      transition: all .4s;
+
+      &:hover {
+        box-shadow: 0 4px 8px 0 rgba($color-black, 0.9), 0 6px 20px 0 rgba($color-black, 0.9);
+        color: $color-purple;
+        transform: translateY(-5px) !important;
+      }
+    }
+
+    &-i {
+      font-size: 2rem;
+    }
+  }
+
+
+  &-img-individual {
+    width: 100%;
+  }
+}
+
+.more-info-button, .popup-Close{
+  border: none;
+  background-color: transparent;
+  color: $color-white;
+}
+
+.popup {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+
+  &-text-video-container{
+    background-color: rgba($color-black, 0.93);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba($color-black, 0.2), 0 6px 20px 0 rgba($color-black, 0.19);
+    max-height: 95%;
+    max-width: 60%;
+    padding: 0 2% 2% 2%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-land) {
+      max-width: 80%
+    }
+
+    @include respond(tab-port) {
+      max-height: 90vh;
+      max-width: 90%;
+    }
+
+    @include respond(phone) {
+      max-height: 85vh;
+      max-width: 90%;
+    }
+
+    & video {
+      max-height: 50vh;
+      max-width: 70%;
+
+      @include respond(tab-land) {
+        max-width: 80%;
+        max-height: 40vh;
+      }
+
+      @include respond(tab-port) {
+        max-height: 35vh;
+        max-width: 80%
+      }
+
+      @include respond(phone) {
+        margin-top: 5%;
+        max-height: 30vh;
+        max-width: 95%;
+      }
+
+      @include respond(phone-small) {
+        margin-top: 5%;
+        max-height: 25vh;
+        width: 95%;
+      }     
+    }
+  }
+
+  &-informative-text {
+    margin: auto;
+    width: 70%;
+
+    @include respond(tab-land) {
+      width: 80%;
+    }
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
+  }
+
+  & p:nth-child(1) {
+    color: $color-purple;
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-top: 5%;
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone-small) {
+      font-size: 2.3rem;
+    }
+  }
+
+  & p:nth-child(2) {
+    margin-top: 3%;
+    font-size: 1.9rem;
+    font-weight: 400;
+
+    @include respond(tab-port) {
+      font-size: 2.2rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.7rem;
+    }
+
+    @include respond(phone-small) {
+      font-size: 1.5rem;
+    }
+  }
+
+  & p:nth-child(3) {
+    margin-top: 2%;
+    font-size: 1.7rem;
+    font-weight: 400;
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.7rem;
+    }
+
+    @include respond(phone-small) {
+      font-size: 1.5rem;
+    }
+  }
+
+  & p:nth-child(4) {
+    font-size: 1.7rem;
+    font-weight: 400;
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(phone-small) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &-info-project-text {
+    color: $color-white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+ 
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+  }
+
+  &-div-close {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3%;
+    width: 95%;
+  }
+
+  &-Close {
+    font-size: 2rem;
+
+    transition: all .5s;
+  }
+
+  &-Close:hover {
+    color: $color-purple;
+  }
+}
+
+.custom-tooltip {
+  background-color: rgba($color-black, .15) !important;
+  font-size: 1.3rem !important;
+  font-weight: 400 !important;
+}

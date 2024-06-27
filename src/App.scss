@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@300;500;800&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import './styles/abstracts/variables.scss';
+@import './styles/abstracts/mixins.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+*::selection {
+  background-color: $color-purple;
+  color: $color-gray-dark;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  line-height: 1.7;
+
+  @include respond(tab-land) {
+    font-size: 62.25%; // 1rem = 10px; 10px/16px = 62.25%
+  }
+
+  @include respond(big-desk) {
+    font-size: 75%; // 1rem = 12px; 12px/16px = 75%
+  }
+}
+

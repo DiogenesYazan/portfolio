@@ -1,0 +1,58 @@
+{
+  "homepage": "https://diogenesyazan.github.io/portfolio/",
+  "name": "portfolio-react",
+  "version": "1.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.7.2",
+    "disable-scroll": "^0.6.0",
+    "prop-types": "^15.8.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^17.0.2",
+    "react-ga": "^3.3.1",
+    "react-ga4": "^1.4.1",
+    "react-router-dom": "^5.3.3",
+    "react-scripts": "5.0.0",
+    "react-tooltip": "^4.2.21",
+    "sass": "^1.49.9",
+    "web-vitals": "^2.1.2"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@iconify/react": "^3.1.3",
+    "eslint": "^8.5.0",
+    "eslint-plugin-react": "^7.28.0",
+    "gh-pages": "^3.2.3"
+  }
+}
