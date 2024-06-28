@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.5fb49e3a.css",
+    "main.js": "/portfolio/static/js/main.c4b35821.js",
+    "static/media/01hiddenEndity.png": "/portfolio/static/media/01hiddenEndity.2f1f2783d12258574861.png",
+    "static/media/07cadastro.png": "/portfolio/static/media/07cadastro.83201422176b8dd3390c.png",
+    "static/media/03apiRest.png": "/portfolio/static/media/03apiRest.f9ad33367d0a695308e2.png",
+    "static/media/12meuPort.png": "/portfolio/static/media/12meuPort.e02c7b0a1bb42943038f.png",
+    "static/media/bootstrap-icons.woff?": "/portfolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/09pokedex.png": "/portfolio/static/media/09pokedex.dbc8d7ffc13467ac047a.png",
+    "static/media/08bank.jpeg": "/portfolio/static/media/08bank.a4c6555e998887fc4a06.jpeg",
+    "static/media/bootstrap-icons.woff2?": "/portfolio/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/04CRUD.png": "/portfolio/static/media/04CRUD.ea6c319b578df0fc8954.png",
+    "static/media/Background-Photoroom.webp": "/portfolio/static/media/Background-Photoroom.8c3cc0a7b3ca7eae066b.webp",
+    "static/media/05CRPG.png": "/portfolio/static/media/05CRPG.5204ca074546e5e54742.png",
+    "static/media/02javaGPT.gif": "/portfolio/static/media/02javaGPT.bb2bbda5c4b95d30f7b4.gif",
+    "static/media/11reactApp.jpeg": "/portfolio/static/media/11reactApp.ea9948a7e4ab89583b36.jpeg",
+    "static/media/10to-do.png": "/portfolio/static/media/10to-do.853ccc8412a24779b8fd.png",
+    "static/media/06SnakePY.png": "/portfolio/static/media/06SnakePY.52400a3801310226813f.png",
+    "index.html": "/portfolio/index.html",
+    "main.5fb49e3a.css.map": "/portfolio/static/css/main.5fb49e3a.css.map",
+    "main.c4b35821.js.map": "/portfolio/static/js/main.c4b35821.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fb49e3a.css",
+    "static/js/main.c4b35821.js"
+  ]
+}
